@@ -1,0 +1,43 @@
+# This is ctblog root .htaccess file
+
+# This is switch for .htaccess
+#AollowOverride None
+
+# BEGIN
+# This is old .htacess content from httpd2.2
+#RewriteEngine On
+#RewriteCond %{SERVER_PORT} 80
+#RewriteCond %{QUERY_STRING} !(for=jetpack)
+#RewriteRule ^(.*)$ https://www.cachetian.com/$1 [R,L]
+# END
+
+# BEGIN HTTP2HTTPS
+RewriteEngine On
+# This will enable the Rewrite capabilities
+
+RewriteCond %{HTTPS} !=on
+# This checks to make sure the connection is not already HTTPS
+
+##RewriteCond %{QUERY_STRING} !(for=jetpack)
+RewriteRule ^/?(.*) https://%{SERVER_NAME}/$1 [R,L]
+# This rule will redirect users from their original location, to the same location but using HTTPS.
+# i.e.  http://www.example.com/foo/ to https://www.example.com/foo/
+# The leading slash is made optional so that this will work either in httpd.conf
+# or .htaccess context
+# BEGIN HTTP2HTTPS
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
+
+# Not Good for my case since 2017-12-09
+##Redirect permanent / https://www.cachetian.com/
+
