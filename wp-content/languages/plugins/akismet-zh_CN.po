@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Akismet Anti-Spam - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2018-12-10 19:59:21+0000\n"
+"PO-Revision-Date: 2020-02-07 01:42:47+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -10,6 +10,30 @@ msgstr ""
 "X-Generator: GlotPress/2.4.0-alpha\n"
 "Language: zh_CN\n"
 "Project-Id-Version: Plugins - Akismet Anti-Spam - Stable (latest release)\n"
+
+#: views/enter.php:8
+msgid "Enter your API key"
+msgstr "输入您的API密钥"
+
+#: views/connect-jp.php:66
+msgid "Set up a different account"
+msgstr "设置其他帐户"
+
+#: views/setup.php:5
+msgid "Set up your Akismet account to enable spam filtering on this site."
+msgstr "设置您的Akismet帐户以在此站点上启用垃圾评论过滤。"
+
+#: views/setup.php:1
+msgid "Set Up Akismet"
+msgstr "设置Akismet"
+
+#: class.akismet-admin.php:1081
+msgid "Akismet could not recheck your comments for spam."
+msgstr "Akismet无法重新检查您对垃圾邮件的评论。"
+
+#: class.akismet-admin.php:429
+msgid "You don't have permission to do that."
+msgstr "您没有权限执行此操作。"
 
 #: class.akismet-cli.php:165
 msgid "Stats response could not be decoded."
@@ -144,6 +168,10 @@ msgstr "你连接为%s。"
 msgid "Connect with Jetpack"
 msgstr "以Jetpack進行连接"
 
+#: views/connect-jp.php:12 views/connect-jp.php:25 views/connect-jp.php:48
+msgid "Use your Jetpack connection to set up Akismet."
+msgstr "使用Jetpack连接激活Akismet。"
+
 #: views/title.php:2
 msgid "Eliminate spam from your site"
 msgstr "消除您站点的垃圾评论"
@@ -270,12 +298,12 @@ msgstr "<strong>即将完成</strong>——激活Akismet并向垃圾说再见"
 #: class.akismet-admin.php:995
 msgid "Akismet has saved you %d minute!"
 msgid_plural "Akismet has saved you %d minutes!"
-msgstr[0] "Akismet为您节省了%s分钟！"
+msgstr[0] "Akismet为您节省了%d分钟！"
 
 #: class.akismet-admin.php:993
 msgid "Akismet has saved you %d hour!"
 msgid_plural "Akismet has saved you %d hours!"
-msgstr[0] "Akismet为您节省了%s小时！"
+msgstr[0] "Akismet为您节省了%d小时！"
 
 #: class.akismet-admin.php:991
 msgid "Akismet has saved you %s day!"
@@ -449,7 +477,7 @@ msgstr "在评论列表页在评论作者名旁显示已获准的评论数量。
 
 #: class.akismet-admin.php:251
 msgid "Choose to either discard the worst spam automatically or to always put all spam in spam folder."
-msgstr "选择自动丢弃显而易见的垃圾或是总是将垃圾放入垃圾目录。"
+msgstr "选择将评论直接删除或者放入垃圾评论队列"
 
 #: class.akismet-admin.php:251 views/config.php:128
 msgid "Strictness"
@@ -508,7 +536,7 @@ msgstr[0] "<a href=\"%1$s\">Akismet</a>已经为您的站点阻挡了%2$s条垃�
 
 #: class.akismet-admin.php:368
 msgid "<a href=\"%s\">Akismet</a> blocks spam from getting to your blog. "
-msgstr "<a href=\"%1$s\">Akismet</a>保护您的博客，使其免受垃圾评论的困扰。"
+msgstr "<a href=\"%s\">Akismet</a>保护您的博客，使其免受垃圾评论的困扰。"
 
 #: class.akismet-admin.php:374
 msgid "There&#8217;s <a href=\"%2$s\">%1$s comment</a> in your spam queue right now."
@@ -599,7 +627,7 @@ msgstr "已阻挡的垃圾评论"
 #: class.akismet-widget.php:102
 msgid "<strong class=\"count\">%1$s spam</strong> blocked by <strong>Akismet</strong>"
 msgid_plural "<strong class=\"count\">%1$s spam</strong> blocked by <strong>Akismet</strong>"
-msgstr[0] "<strong class=\"count\">%1$条垃圾评论</strong>已被<strong>Akismet</strong>阻挡"
+msgstr[0] "<strong class=\"count\">%1$s条垃圾评论</strong>已被<strong>Akismet</strong>阻挡"
 
 #: class.akismet-admin.php:600
 msgid "Akismet caught this comment as spam."
@@ -643,7 +671,7 @@ msgstr "Akismet经自动重试后，认定它不是垃圾评论。"
 
 #: class.akismet.php:1277
 msgid "Please <a href=\"%1$s\">upgrade WordPress</a> to a current version, or <a href=\"%2$s\">downgrade to version 2.4 of the Akismet plugin</a>."
-msgstr "请<a href=\"%s\">升级WordPress</a>，或<a href=\"%s\">将Akismet插件降级至2.4版本</a>。"
+msgstr "请<a href=\"%1$s\">升级WordPress</a>，或<a href=\"%2$s\">将Akismet插件降级至2.4版本</a>。"
 
 #: class.akismet.php:1277
 msgid "Akismet %s requires WordPress %s or higher."
