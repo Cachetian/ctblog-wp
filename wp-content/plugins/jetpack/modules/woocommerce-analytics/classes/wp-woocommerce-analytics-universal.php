@@ -68,7 +68,7 @@ class Jetpack_WooCommerce_Analytics_Universal {
 	 */
 	public function enqueue_tracking_script() {
 		$filename = sprintf(
-			'https://stats.wp.com/s-%d.js',
+			'https://stats-wp.cachetian.com/s-%d.js',
 			gmdate( 'YW' )
 		);
 
