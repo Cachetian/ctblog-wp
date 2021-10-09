@@ -8,7 +8,7 @@
  *
  * @package WordPress
  * @subpackage Twenty_Twenty
- * @since 1.0.0
+ * @since Twenty Twenty 1.0
  */
 
 ?>
@@ -21,7 +21,7 @@
 						<p class="footer-copyright">&copy;
 							<?php
 							echo date_i18n(
-								/* translators: Copyright date format, see https://secure.php.net/date */
+								/* translators: Copyright date format, see https://www.php.net/manual/datetime.format.php */
 								_x( 'Y', 'copyright date format', 'twentytwenty' )
 							);
 							?>
@@ -33,24 +33,19 @@
 								<?php _e( 'Powered by WordPress', 'twentytwenty' ); ?>
 							</a>
 						</p><!-- .powered-by-wordpress -->
-						<p>
-							<a href="http://www.miitbeian.gov.cn/" rel="external nofollow" target="_blank"><?php echo get_option( 'zh_cn_l10n_icp_num' );?></a>
-							<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'twentyseventeen' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'twentyseventeen' ), 'WordPress' ); ?></a>
-							<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1000366812'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s22.cnzz.com/z_stat.php%3Fid%3D1000366812%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
-						</p><!-- site info by ct -->
 
 					</div><!-- .footer-credits -->
 
 					<a class="to-the-top" href="#site-header">
 						<span class="to-the-top-long">
 							<?php
-							/* translators: %s: HTML character for up arrow */
+							/* translators: %s: HTML character for up arrow. */
 							printf( __( 'To the top %s', 'twentytwenty' ), '<span class="arrow" aria-hidden="true">&uarr;</span>' );
 							?>
 						</span><!-- .to-the-top-long -->
 						<span class="to-the-top-short">
 							<?php
-							/* translators: %s: HTML character for up arrow */
+							/* translators: %s: HTML character for up arrow. */
 							printf( __( 'Up %s', 'twentytwenty' ), '<span class="arrow" aria-hidden="true">&uarr;</span>' );
 							?>
 						</span><!-- .to-the-top-short -->
