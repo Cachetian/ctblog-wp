@@ -54,6 +54,8 @@
 				<?php endif; ?>
 			</div><!-- .site-name -->
 			<div class="powered-by">
+				<!-- license info by ct -->
+				<a href="http://www.miitbeian.gov.cn/" rel="external nofollow" target="_blank"><?php echo get_option( 'zh_cn_l10n_icp_num' );?></a>
 				<?php
 				printf(
 					/* translators: %s: WordPress. */
@@ -61,6 +63,8 @@
 					'<a href="' . esc_url( __( 'https://wordpress.org/', 'twentytwentyone' ) ) . '">WordPress</a>'
 				);
 				?>
+				<!-- cnzz info by ct -->
+				<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1000366812'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s22.cnzz.com/z_stat.php%3Fid%3D1000366812%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
 			</div><!-- .powered-by -->
 
 		</div><!-- .site-info -->
