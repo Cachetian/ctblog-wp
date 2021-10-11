@@ -578,7 +578,7 @@ class Jetpack_Gutenberg {
 
 		// Required for Analytics. See _inc/lib/admin-pages/class.jetpack-admin-page.php.
 		if ( ! ( new Status() )->is_development_mode() && Jetpack::is_active() ) {
-			wp_enqueue_script( 'jp-tracks', '//stats-wp.cachetian.com/w.js', array(), gmdate( 'YW' ), true );
+			wp_enqueue_script( 'jp-tracks', '//stats.wp.com/w.js', array(), gmdate( 'YW' ), true );
 		}
 
 		$rtl              = is_rtl() ? '.rtl' : '';

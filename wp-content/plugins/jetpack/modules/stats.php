@@ -241,7 +241,7 @@ function stats_footer() {
 }
 
 function stats_render_footer( $data ) {
-	$script = 'https://stats-wp.cachetian.com/e-' . gmdate( 'YW' ) . '.js';
+	$script = 'https://stats.wp.com/e-' . gmdate( 'YW' ) . '.js';
 	$data_stats_array = stats_array( $data );
 
 	$stats_footer = <<<END

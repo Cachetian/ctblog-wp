@@ -166,7 +166,7 @@ class Jetpack_React_Page extends Jetpack_Admin_Page {
 
 		if ( ! $is_development_mode && Jetpack::is_active() ) {
 			// Required for Analytics.
-			wp_enqueue_script( 'jp-tracks', '//stats-wp.cachetian.com/w.js', array(), gmdate( 'YW' ), true );
+			wp_enqueue_script( 'jp-tracks', '//stats.wp.com/w.js', array(), gmdate( 'YW' ), true );
 		}
 
 		// Add objects to be passed to the initial state of the app.

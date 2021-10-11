@@ -302,7 +302,7 @@ class Jetpack_IDC {
 		// Required for Tracks
 		wp_enqueue_script(
 			'jp-tracks',
-			'//stats-wp.cachetian.com/w.js',
+			'//stats.wp.com/w.js',
 			array(),
 			gmdate( 'YW' ),
 			true

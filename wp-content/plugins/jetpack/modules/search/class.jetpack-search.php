@@ -311,7 +311,7 @@ class Jetpack_Search {
 	 * Loads scripts for Tracks analytics library
 	 */
 	public function load_and_initialize_tracks() {
-		wp_enqueue_script( 'jp-tracks', '//stats-wp.cachetian.com/w.js', array(), gmdate( 'YW' ), true );
+		wp_enqueue_script( 'jp-tracks', '//stats.wp.com/w.js', array(), gmdate( 'YW' ), true );
 	}
 
 	/**

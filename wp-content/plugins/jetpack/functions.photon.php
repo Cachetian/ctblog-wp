@@ -121,7 +121,7 @@ function jetpack_photon_url( $image_url, $args = array(), $scheme = null ) {
 	// So if the image is already a Photon URL, append the new arguments to the existing URL.
 	// Alternately, if it's a *.files.wordpress.com url, then keep the domain as is.
 	if (
-		in_array( $image_url_parts['host'], array( 'i0.wp.com', 'i1.wp.com', 'i2-wp.cachetian.com' ), true )
+		in_array( $image_url_parts['host'], array( 'i0.wp.com', 'i1.wp.com', 'i2.wp.com' ), true )
 		|| wp_parse_url( $custom_photon_url, PHP_URL_HOST ) === $image_url_parts['host']
 		|| $is_wpcom_image
 	) {

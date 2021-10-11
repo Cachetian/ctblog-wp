@@ -124,7 +124,7 @@ class Jetpack_Search_Widget extends WP_Widget {
 		// Required for Tracks
 		wp_register_script(
 			'jp-tracks',
-			'//stats-wp.cachetian.com/w.js',
+			'//stats.wp.com/w.js',
 			array(),
 			gmdate( 'YW' ),
 			true
