@@ -18,7 +18,7 @@
 
 	<?php get_template_part( 'template-parts/footer/footer-widgets' ); ?>
 
-	<footer id="colophon" class="site-footer" role="contentinfo">
+	<footer id="colophon" class="site-footer">
 
 		<?php if ( has_nav_menu( 'footer' ) ) : ?>
 			<nav aria-label="<?php esc_attr_e( 'Secondary menu', 'twentytwentyone' ); ?>" class="footer-navigation">
@@ -53,6 +53,13 @@
 					<?php endif; ?>
 				<?php endif; ?>
 			</div><!-- .site-name -->
+
+			<?php
+			if ( function_exists( 'the_privacy_policy_link' ) ) {
+				the_privacy_policy_link( '<div class="privacy-policy">', '</div>' );
+			}
+			?>
+
 			<div class="powered-by">
 				<!-- license info by ct -->
 				<a href="https://beian.miit.gov.cn/" rel="external nofollow" target="_blank"><?php echo get_option( 'zh_cn_l10n_icp_num' );?></a>
@@ -63,8 +70,8 @@
 					'<a href="' . esc_url( __( 'https://wordpress.org/', 'twentytwentyone' ) ) . '">WordPress</a>'
 				);
 				?>
-				<!-- cnzz info by ct -->
-				<script type="text/javascript">document.write(unescape("%3Cspan id='cnzz_stat_icon_1000366812'%3E%3C/span%3E%3Cscript src='https://s22.cnzz.com/z_stat.php%3Fid%3D1000366812%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+								<!-- cnzz info by ct -->
+								<script type="text/javascript">document.write(unescape("%3Cspan id='cnzz_stat_icon_1000366812'%3E%3C/span%3E%3Cscript src='https://s22.cnzz.com/z_stat.php%3Fid%3D1000366812%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
 			</div><!-- .powered-by -->
 
 		</div><!-- .site-info -->
